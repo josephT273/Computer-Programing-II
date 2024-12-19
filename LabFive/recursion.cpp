@@ -2,17 +2,18 @@
 
 using namespace std;
 
-int sum(int k){
-  if (k % 2 == 0){
-    k /= 2;
-  }else{
-    k = (k * 3) + 1;
+int fact(int k)
+{
+  if (k > 1)
+  {
+    return fact(k - 1) * k;
   }
-  return k;
+  return 1;
 }
 
-int main(){
-  int result = sum(5);
+int main()
+{
+  int result = fact(5);
   cout << result;
   return 0;
 }
