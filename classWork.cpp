@@ -15,8 +15,7 @@
 
 using namespace std;
 
-int main()
-{
+int main(){
 
     char alphabet;
 
@@ -26,48 +25,39 @@ int main()
     bool capVowel = (alphabet == 'A' || alphabet == 'E' || alphabet == 'I' || alphabet == 'O' || alphabet == 'U');
     bool smallVowel = (alphabet == 'a' || alphabet == 'e' || alphabet == 'i' || alphabet == 'o' || alphabet == 'u');
 
-    if (capVowel || smallVowel)
-    {
+    if(capVowel || smallVowel){
         cout << "It is vowel" << endl;
-    }
-    else
-    {
+    }else{
         cout << "It is consonant" << endl;
     }
+
 
     char character;
     cout << "Enter a key: ";
     cin >> character;
 
-    if ((character >= 65 && character <= 90) || (character >= 97 && character <= 122))
-    {
+
+    if ((character >= 65 && character <= 90) || (character >= 97 && character <= 122)) {
         cout << "The key you entered it alphabet" << endl;
-    }
-    else
-    {
+    }else{
         cout << "The key you entered is not alphabet" << endl;
     }
+
 
     int a, b, c;
     int max;
     cout << "Enter 3 numbers: " << endl;
     cin >> a >> b >> c;
 
-    if (a > b && a > c)
-    {
+    if (a > b && a > c){
         max = a;
-    }
-    else if (b > a && b > c)
-    {
+    }else if (b > a && b > c) {
         max = b;
-    }
-    else
-    {
+    }else {
         max = c;
     }
 
-    max = (a > b && a > c) ? a : (b > a && b > c) ? b
-                                                  : c;
+    max = (a > b && a > c) ? a : (b > a && b > c) ? b : c;
     cout << "The maximum number is " << max << endl;
 
     int numberOfStudent;
@@ -79,8 +69,7 @@ int main()
     cin >> numberOfStudent;
 
     int i = 1;
-    while (i <= numberOfStudent)
-    {
+    while (i <= numberOfStudent) {
         cout << "Enter the " << i << " Student score: ";
         cin >> score;
         totalScore += score;
